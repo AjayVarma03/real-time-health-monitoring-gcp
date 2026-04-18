@@ -30,3 +30,17 @@ def check_alerts(record):
         alerts.append("HIGH_RESP_RATE")
 
     return alerts
+
+
+
+
+if __name__ == "__main__":
+    sample = {
+        "heart_rate": 130,
+        "blood_pressure_systolic": 150,
+        "oxygen_saturation": 90,
+        "respiratory_rate": 30,
+        "body_temperature": 39
+    }
+
+    print(check_alerts(sample))
