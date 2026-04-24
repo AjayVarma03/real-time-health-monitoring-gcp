@@ -1,0 +1,18 @@
+{
+  "fields": [
+    {"name": "patient_id", "type": "STRING"},
+    {"name": "timestamp", "type": "TIMESTAMP"},
+    {"name": "heart_rate", "type": "INTEGER"},
+    {"name": "blood_pressure_systolic", "type": "INTEGER"},
+    {"name": "blood_pressure_diastolic", "type": "INTEGER"},
+    {"name": "oxygen_saturation", "type": "INTEGER"},
+    {"name": "respiratory_rate", "type": "INTEGER"},
+    {"name": "body_temperature", "type": "FLOAT"},
+    {"name": "device_id", "type": "STRING"},
+    {"name": "hospital_id", "type": "STRING"},
+    {"name": "room_number", "type": "STRING"},
+    {"name": "bed_number", "type": "STRING"},
+    {"name": "alerts", "type": "STRING", "mode": "REPEATED"},
+    {"name": "status", "type": "STRING"}
+  ]
+}

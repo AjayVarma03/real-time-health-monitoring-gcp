@@ -1,38 +1,35 @@
-def check_alerts(record):
+def check_alerts(row):
     alerts = []
 
     # Heart Rate
-    if record["heart_rate"] < 50:
+    if row["heart_rate"] < 50:
         alerts.append("LOW_HEART_RATE")
-    elif record["heart_rate"] > 120:
+    elif row["heart_rate"] > 120:
         alerts.append("HIGH_HEART_RATE")
 
     # Blood Pressure
-    if record["blood_pressure_systolic"] < 90:
+    if row["blood_pressure_systolic"] < 90:
         alerts.append("LOW_BP")
-    elif record["blood_pressure_systolic"] > 140:
+    elif row["blood_pressure_systolic"] > 140:
         alerts.append("HIGH_BP")
 
     # Oxygen
-    if record["oxygen_saturation"] < 92:
+    if row["oxygen_saturation"] < 92:
         alerts.append("LOW_OXYGEN")
 
     # Temperature
-    if record["body_temperature"] < 35:
+    if row["body_temperature"] < 35:
         alerts.append("LOW_TEMP")
-    elif record["body_temperature"] > 38:
+    elif row["body_temperature"] > 38:
         alerts.append("HIGH_TEMP")
 
     # Respiratory
-    if record["respiratory_rate"] < 12:
+    if row["respiratory_rate"] < 12:
         alerts.append("LOW_RESP_RATE")
-    elif record["respiratory_rate"] > 25:
+    elif row["respiratory_rate"] > 25:
         alerts.append("HIGH_RESP_RATE")
 
     return alerts
-
-
-
 
 if __name__ == "__main__":
     sample = {
