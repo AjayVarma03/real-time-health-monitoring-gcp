@@ -114,7 +114,8 @@ patient-vitals-pipeline/
 │   ├── dashboard.png            # Looker Studio dashboard screenshot
 │   ├── dataflow_job.png         # Dataflow job graph screenshot
 │   └── dataflow_metrics.png     # Dataflow job metrics screenshot
-│
+│──sql/
+│   └── alerts_dashboard.sql
 ├── sample_data.csv              # Sample BigQuery export (247 rows)
 ├── requirements.txt
 ├── .gitignore
